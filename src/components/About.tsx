@@ -9,20 +9,17 @@ const About: React.FC<{ lang: boolean; color: string }> = ({ lang, color }) => {
       <hr />
 
       {content.map((e) => {
-        const word = e.match(/\*(.*?)\*/);
+        const word = e.match(/\[(.+?)\]/);
         const text = e.replace(
-          /\*(.*?)\*/,
-          `<span id="word">${word && word[1]}</span>`
+          /\[(.+?)\]/,
+          ` <style type="text/css">
+          .word { 
+           color: ${color};
+          }
+         </style><span class="word">${word && word[1]}</span>`
         );
-        const el = document.getElementById("word");
-
-        if (el) {
-          // @ts-ignore
-          el.style.color = color;
-        }
-
         return word ? (
-          <div dangerouslySetInnerHTML={{ __html: text }} />
+          <div key={text} dangerouslySetInnerHTML={{ __html: text }} />
         ) : (
           <p key={e}>{e}</p>
         );
