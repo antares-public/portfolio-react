@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { COLORS } from "../constants/colors";
 import About from "./About";
 import Header from "./Header";
+import NotFound from "./NotFound";
 import Projects from "./Projects";
 import Resume from "./Resume";
 
@@ -56,6 +57,7 @@ function App() {
           path="/resume"
           element={<Resume lang={lang} color={COLORS[count]} />}
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Wrapper>
   );
