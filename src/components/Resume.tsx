@@ -21,7 +21,9 @@ const Resume: React.FC<{ lang: boolean; color: string }> = ({
           {content.map((e) => (
             <JobComponent key={e.name}>
               <h3 style={{ marginBottom: 5 }}>
-                <a href={e.link || ""}>{e.name}</a>
+                <a href={e.link || ""} target="_blank">
+                  {e.name}
+                </a>
               </h3>
               <p style={{ margin: 0 }}>
                 <span style={{ color: color }}>{e.status}</span>
