@@ -1,61 +1,61 @@
-export const ProjectsList = [
+export const ProjectsListRu = [
     {
         link: "https://github.com/antaresofficial/mini-redux",
-        name: "Mini-Redux"
+        name: "Мини Редакс"
     },
 
     {
         link: "https://github.com/antaresofficial/antares-react-app",
-        name: "Webpack-Config",
+        name: "Webpack сборка",
     },
 
     {
         link: "https://github.com/antaresofficial/online-store-node",
-        name: "Online-Store-Node",
+        name: "Интернет магазин",
     },
 
     {
         link: "https://github.com/antaresofficial/telegram-dollar-bot",
-        name: "Telegram-Dollar-Bot",
+        name: "Телеграм бот (Курс Доллара)",
     },
 
     {
         link: "https://github.com/antaresofficial/chucknorris",
-        name: "Сhuck-Norris-Joke",
+        name: "Чак Норрис Шутки",
     },
 
     {
         link: "https://github.com/antaresofficial/youtube-api",
-        name: "Youtube-API",
+        name: "Ютуб API",
     },
 
     {
         link: "https://github.com/antaresofficial/react-frontend-blog",
-        name: "React-Frontend-Blog",
+        name: "Блог (клиентская часть)",
     },
     {
         link: "https://github.com/antaresofficial/links",
-        name: "Links",
+        name: "Сокращение ссылок ",
     },
     {
         link: "https://github.com/antaresofficial/node-backend-blog",
-        name: "Node-Backend-Blog",
+        name: "Блог (серверная часть)",
     },
 
     {
         link: "https://github.com/antaresofficial/antares-chat",
-        name: "Antares-Chat",
+        name: "Antares чат",
     },
     {
         link: "https://github.com/antaresofficial/memory-game",
-        name: "Memory-Game",
+        name: "Игра на память",
     },
     {
         link: "https://github.com/antaresofficial/todo-typescript",
-        name: "To-Do-Typescript",
+        name: "Список дел с сохранением",
     },
     {
         link: "https://github.com/antaresofficial/tic-tac-toe",
-        name: "Tic-Tak-Toe",
+        name: "Крестики нолики",
     },
 ]

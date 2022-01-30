@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-function Header() {
+const Header: React.FC<{ color: string }> = ({ color }) => {
   return (
-    <Head>
+    <Head color={color}>
       <a href="https://github.com/antaresofficial">antaresofficial</a>
       <div className="nav">
         <Link to="/">About</Link>
@@ -13,7 +13,7 @@ function Header() {
       </div>
     </Head>
   );
-}
+};
 
 const Head = styled.header`
   display: flex;
@@ -23,14 +23,14 @@ const Head = styled.header`
   a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .nav a {
-    color: #2bbc8a;
+    color: ${(props) => props.color};
     position: relative;
     margin-right: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     &:last-child::after {
       display: none;
@@ -46,7 +46,7 @@ const Head = styled.header`
       height: 16px;
       right: -10px;
       top: 5px;
-      background: #2bbc8a;
+      background: ${(props) => props.color};
     }
 
     &::before {
@@ -61,7 +61,7 @@ const Head = styled.header`
       left: 0;
       right: 0;
       width: 100%;
-      background: #2bbc8a;
+      background: ${(props) => props.color};
     }
 
     &:hover::before {

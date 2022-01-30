@@ -1,21 +1,18 @@
-function About() {
+import { AboutEn } from "../constants/en/about";
+import { AboutRu } from "../constants/ru/about";
+
+const About: React.FC<{ lang: boolean; color: string }> = ({ lang }) => {
+  const content = lang ? AboutRu : AboutEn;
   return (
     <div>
       <h1>Maria Berestovaya</h1>
       <hr />
-      <p>Hi, my name is Maria.</p>
 
-      <p>
-        I am a Frontend Developer (TS, node, React) from Orenburg. Despite my
-        main field of activity, I like low-level things.
-      </p>
-
-      <p>
-        I participated in the development of a Sberclass constructor for an
-        interactive educational game in Sberbank.
-      </p>
+      {content.map((e) => (
+        <p key={e}>{e}</p>
+      ))}
     </div>
   );
-}
+};
 
 export default About;
