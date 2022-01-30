@@ -15,3 +15,7 @@ body {
 :before {
   box-sizing: border-box;
 }
+
+.word {
+  color: red;
+}

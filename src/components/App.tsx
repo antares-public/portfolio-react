@@ -64,6 +64,7 @@ function App() {
 const Wrapper = styled.main`
   margin: 15px auto;
   max-width: 800px;
+  min-height: 100%;
 `;
 
 const FindMe = styled.p`
@@ -74,7 +75,7 @@ const FindMe = styled.p`
 `;
 
 const Buttons = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
 
