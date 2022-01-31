@@ -13,10 +13,18 @@ const Resume: React.FC<{ lang: boolean; color: string }> = ({
       <hr />
 
       <div>
-        <Block>
-          <p style={{ marginBottom: 0 }}>Skills: Programmer, Developer;</p>
-          <p style={{ margin: 0 }}>Work experience: 1 year 9 months;</p>
-        </Block>
+        {!lang ? (
+          <Block>
+            <p style={{ marginBottom: 0 }}>Skills: Programmer, Developer;</p>
+            <p style={{ margin: 0 }}>Work experience: 1 year 9 months;</p>
+          </Block>
+        ) : (
+          <Block>
+            <p style={{ marginBottom: 0 }}>Навыки: Программист, разработчик;</p>
+            <p style={{ margin: 0 }}>Опыт работы: 1 год 9 месяцев;</p>
+          </Block>
+        )}
+
         <Block>
           {content.map((e) => (
             <JobComponent key={e.name}>

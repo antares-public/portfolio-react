@@ -65,7 +65,7 @@ function App() {
           path="/resume"
           element={<Resume lang={lang} color={COLORS[count]} />}
         />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound lang={lang} />} />
       </Routes>
     </Wrapper>
   );
