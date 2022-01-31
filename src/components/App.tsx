@@ -74,6 +74,7 @@ function App() {
 const Wrapper = styled.main`
   margin: 15px auto;
   max-width: 800px;
+  padding: 20px;
   min-height: 100%;
 `;
 
