@@ -19,7 +19,7 @@ const About: React.FC<{ lang: boolean; color: string }> = ({ lang, color }) => {
          </style><span class="word">${word && word[1]}</span>`
         );
         return word ? (
-          <div key={text} dangerouslySetInnerHTML={{ __html: text }} />
+          <p key={text} dangerouslySetInnerHTML={{ __html: text }} />
         ) : (
           <p key={e}>{e}</p>
         );
