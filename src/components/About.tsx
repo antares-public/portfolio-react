@@ -2,10 +2,10 @@ import { AboutEn } from "../constants/en/about";
 import { AboutRu } from "../constants/ru/about";
 
 const About: React.FC<{ lang: boolean; color: string }> = ({ lang, color }) => {
-  const content = lang ? AboutRu : AboutEn;
+  const { content, name } = lang ? AboutRu : AboutEn;
   return (
     <div>
-      <h1>Maria Berestovaya</h1>
+      <h1>{name}</h1>
       <hr />
 
       {content.map((e) => {

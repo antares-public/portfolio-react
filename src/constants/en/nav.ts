@@ -1,0 +1,1 @@
+export const NavEn = { about: "Обо мне", resume: "Резюме", projects: "Проекты" }

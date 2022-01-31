@@ -6,10 +6,10 @@ const Projects: React.FC<{ lang: boolean; color: string }> = ({
   lang,
   color,
 }) => {
-  const content = lang ? ProjectsListRu : ProjectsListEn;
+  const { content, name } = lang ? ProjectsListRu : ProjectsListEn;
   return (
     <div>
-      <h1>Projects</h1>
+      <h1>{name}</h1>
       <hr />
 
       <Block>

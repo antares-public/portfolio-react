@@ -36,17 +36,25 @@ function App() {
 
   return (
     <Wrapper>
-      <Header color={COLORS[count]} />
+      <Header color={COLORS[count]} lang={lang} />
       <Buttons>
         <button onClick={() => setLang(!lang)}>En-Ru</button>
         <button onClick={handleChangeColor}>Color</button>
       </Buttons>
 
-      <FindMe>
-        Find me on <a href="https://github.com/antaresofficial">github</a>,{" "}
-        <a href="https://twitter.com/antares_nebula">twitter</a> and{" "}
-        <a href="https://t.me/mariantares">telegram</a>;
-      </FindMe>
+      {!lang ? (
+        <FindMe>
+          Find me on <a href="https://github.com/antaresofficial">github</a>,{" "}
+          <a href="https://twitter.com/antares_nebula">twitter</a> and{" "}
+          <a href="https://t.me/mariantares">telegram</a>;
+        </FindMe>
+      ) : (
+        <FindMe>
+          Мои контакты: <a href="https://github.com/antaresofficial">github</a>,{" "}
+          <a href="https://twitter.com/antares_nebula">twitter</a> и{" "}
+          <a href="https://t.me/mariantares">telegram</a>;
+        </FindMe>
+      )}
       <Routes>
         <Route path="/" element={<About lang={lang} color={COLORS[count]} />} />
         <Route
@@ -85,6 +93,8 @@ const Buttons = styled.div`
     border: none;
     font-family: "Fira Code", monospace;
     padding: 10px;
+    backgroud-color: #fff;
+    color: #000;
   }
 `;
 

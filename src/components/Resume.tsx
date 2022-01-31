@@ -6,10 +6,10 @@ const Resume: React.FC<{ lang: boolean; color: string }> = ({
   lang,
   color,
 }) => {
-  const content = lang ? ResumeListRu : ResumeListEn;
+  const { content, name } = lang ? ResumeListRu : ResumeListEn;
   return (
     <div>
-      <h1>Frontend developer</h1>
+      <h1>{name}</h1>
       <hr />
 
       <div>

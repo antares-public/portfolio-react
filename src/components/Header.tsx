@@ -1,15 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { NavEn } from "../constants/en/nav";
+import { NavRu } from "../constants/ru/nav";
 
-const Header: React.FC<{ color: string }> = ({ color }) => {
+const Header: React.FC<{ color: string; lang: boolean }> = ({
+  color,
+  lang,
+}) => {
+  const content = lang ? NavEn : NavRu;
+
   return (
     <Head color={color}>
-      <a href="https://github.com/antaresofficial">antaresofficial</a>
+      <a className="logo" href="https://github.com/antaresofficial">
+        antaresofficial
+      </a>
       <div className="nav">
-        <Link to="/">About</Link>
-        <Link to="/resume">Resume</Link>
-        <Link to="/projects">Projects</Link>
+        {Object.entries(content).map((e) => {
+          return <Link to={e[0] === "about" ? "/" : e[0]}>{e[1]}</Link>;
+        })}
       </div>
     </Head>
   );
@@ -19,6 +28,12 @@ const Head = styled.header`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  .logo {
+    @media (max-width: 700px) {
+      padding-right: 30px;
+    }
+  }
 
   a {
     color: #fff;

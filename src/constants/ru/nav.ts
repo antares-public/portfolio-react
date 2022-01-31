@@ -1,0 +1,1 @@
+export const NavRu = { about: "About", resume: "Resume", projects: "Projects" }
