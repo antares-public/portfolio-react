@@ -22,6 +22,11 @@ export const ProjectsListEn = {
         },
 
         {
+            link: "https://github.com/antaresofficial/test-42px",
+            name: "Contacts"
+        },
+
+        {
             link: "https://github.com/antaresofficial/chucknorris",
             name: "Сhuck-Norris-Joke",
         },
