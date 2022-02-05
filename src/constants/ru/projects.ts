@@ -22,6 +22,11 @@ export const ProjectsListRu = {
         },
 
         {
+            link: "https://github.com/antaresofficial/test-42px",
+            name: "Приложение для записи контактов"
+        },
+
+        {
             link: "https://github.com/antaresofficial/chucknorris",
             name: "Чак Норрис Шутки",
         },
