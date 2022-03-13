@@ -21,7 +21,7 @@ const Resume: React.FC<{ lang: boolean; color: string }> = ({
         ) : (
           <Block>
             <p style={{ marginBottom: 0 }}>Навыки: Программист, разработчик;</p>
-            <p style={{ margin: 0 }}>Опыт работы: 1 год 10 месяцев;</p>
+            <p style={{ margin: 0 }}>Опыт работы: 2 года;</p>
           </Block>
         )}
 
