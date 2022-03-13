@@ -16,7 +16,7 @@ const Resume: React.FC<{ lang: boolean; color: string }> = ({
         {!lang ? (
           <Block>
             <p style={{ marginBottom: 0 }}>Skills: Programmer, Developer;</p>
-            <p style={{ margin: 0 }}>Work experience: 1 year 10 months;</p>
+            <p style={{ margin: 0 }}>Work experience: 2 years;</p>
           </Block>
         ) : (
           <Block>
