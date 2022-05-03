@@ -21,7 +21,7 @@ const Resume: React.FC<{ lang: boolean; color: string }> = ({
         ) : (
           <Block>
             <p style={{ marginBottom: 0 }}>Навыки: Программист, разработчик;</p>
-            <p style={{ margin: 0 }}>Опыт работы: 2 года;</p>
+            <p style={{ margin: 0 }}>Опыт работы: &#62; 2х лет;</p>
           </Block>
         )}
 
@@ -29,7 +29,7 @@ const Resume: React.FC<{ lang: boolean; color: string }> = ({
           {content.map((e) => (
             <JobComponent key={e.name}>
               <h3 style={{ marginBottom: 5 }}>
-                <a href={e.link || ""} target="_blank">
+                <a href={e.link || ""} target="_blank" rel="noreferrer">
                   {e.name}
                 </a>
               </h3>

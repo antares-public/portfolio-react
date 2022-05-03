@@ -8,7 +8,7 @@ const Header: React.FC<{ color: string; lang: boolean }> = ({
   color,
   lang,
 }) => {
-  const content = lang ? NavEn : NavRu;
+  const content = lang ? NavRu : NavEn;
 
   return (
     <Head color={color}>

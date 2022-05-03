@@ -1,1 +1,1 @@
-export const NavEn = { about: "Обо мне", resume: "Резюме", projects: "Проекты" }
+export const NavEn = { about: "About", resume: "Resume", projects: "Projects" }
