@@ -29,10 +29,6 @@ export const ProjectsListRu = {
       link: "https://github.com/antaresofficial/keylogger",
       name: "Простой keylogger",
     },
-    {
-      link: "https://github.com/antaresofficial/youtube-api",
-      name: "Ютуб API",
-    },
 
     {
       link: "https://github.com/antaresofficial/react-frontend-blog",
